@@ -31,9 +31,40 @@ npm run start    # Production-style: simple static server on port 3000
 
 ## Deploy to Netlify
 
-1. Push this folder to a GitHub repo (or use Netlify’s drag‑and‑drop).
-2. In Netlify: **Add new site** → **Import from Git** (or drag the folder).
-3. Build settings: leave **Build command** empty, set **Publish directory** to `.` (root).
-4. Deploy. Your site will be at `something.netlify.app`. You can add a custom domain later.
+This site is static (HTML, CSS, images). No build step is required. Netlify will serve the files as-is using the settings in `netlify.toml`.
 
-No backend or build step is required; the site is plain HTML, CSS, and assets.
+### Option A: Deploy with Git (recommended)
+
+1. **Push your code to GitHub**  
+   Create a new repo on GitHub, then in this folder run:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   git push -u origin main
+   ```
+
+2. **Connect to Netlify**  
+   - Go to [netlify.com](https://www.netlify.com) and sign in (or sign up with GitHub).  
+   - Click **Add new site** → **Import an existing project**.  
+   - Choose **GitHub** and authorize Netlify.  
+   - Select the repo you pushed.  
+
+3. **Configure the build**  
+   Netlify should pick up `netlify.toml` automatically. If not, set:
+   - **Build command:** leave empty, or `echo 'Static site – no build'`  
+   - **Publish directory:** `.` (the root)  
+
+4. **Deploy**  
+   Click **Deploy site**. Netlify will build and give you a URL like `random-name-123.netlify.app`.  
+   Every push to `main` will trigger a new deploy.
+
+### Option B: Drag-and-drop deploy
+
+1. Go to [app.netlify.com](https://app.netlify.com) and sign in.  
+2. Drag this project **folder** (the one containing `index.html`, `band.html`, `assets/`, etc.) onto the “Deploy manually” drop zone.  
+3. Netlify will upload and publish. You’ll get a live URL right away.  
+   - **Note:** Drag-and-drop doesn’t connect to Git, so you’ll need to drag the folder again whenever you want to update the site.
+
+### After deploy
+
+- **Custom domain:** In the Netlify dashboard, go to **Domain settings** → **Add custom domain** and follow the steps.  
+- **HTTPS:** Netlify provides a free SSL certificate; it’s enabled by default on `*.netlify.app` and for custom domains.
