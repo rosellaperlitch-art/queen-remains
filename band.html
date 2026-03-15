@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Band – The Queen Remains</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="The Queen Remains Home">
+        <img src="assets/logo.png" alt="The Queen Remains logo" />
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="band.html">The Band</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="gigs.html">Gigs</a>
+        <a href="videos.html">Videos</a>
+        <a href="merch.html">Merch</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">The Band</h1>
+    <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted);">Meet the six of us.</p>
+
+    <div class="band-grid">
+      <article class="card band-member">
+        <img src="assets/charlotte.png" alt="Charlotte" class="band-member-photo" />
+        <div class="band-member-info">
+          <h2 class="card-title">Charlotte</h2>
+          <p class="band-role">Vocalist</p>
+          <p class="band-bio">Charlotte brings the high notes and the energy. When she’s not singing, she’s probably thinking about the next riff. Placeholder bio—replace with your own.</p>
+        </div>
+      </article>
+
+      <article class="card band-member">
+        <img src="assets/willa.png" alt="Willa" class="band-member-photo" />
+        <div class="band-member-info">
+          <h2 class="card-title">Willa</h2>
+          <p class="band-role">Vocalist</p>
+          <p class="band-bio">Willa’s voice cuts through the mix. She and Charlotte handle the melodies and the shouts. Placeholder bio—replace with your own.</p>
+        </div>
+      </article>
+
+      <article class="card band-member">
+        <img src="assets/quince.png" alt="Quince" class="band-member-photo" />
+        <div class="band-member-info">
+          <h2 class="card-title">Quince</h2>
+          <p class="band-role">Drums</p>
+          <p class="band-bio">Quince keeps the beat and the chaos in check. If the room is shaking, that’s probably the kit. Placeholder bio—replace with your own.</p>
+        </div>
+      </article>
+
+      <article class="card band-member">
+        <img src="assets/henry.png" alt="Henry" class="band-member-photo" />
+        <div class="band-member-info">
+          <h2 class="card-title">Henry</h2>
+          <p class="band-role">Electric Guitar</p>
+          <p class="band-bio">Henry’s on one of the guitars—riffs, solos, and the occasional feedback. Placeholder bio—replace with your own.</p>
+        </div>
+      </article>
+
+      <article class="card band-member">
+        <img src="assets/gabe.png" alt="Gabriel" class="band-member-photo" />
+        <div class="band-member-info">
+          <h2 class="card-title">Gabriel</h2>
+          <p class="band-role">Electric Guitar</p>
+          <p class="band-bio">Gabriel handles the other guitar. Together with Henry, they fill out the sound. Placeholder bio—replace with your own.</p>
+        </div>
+      </article>
+
+      <article class="card band-member">
+        <img src="assets/rosella.png" alt="Rosella" class="band-member-photo" />
+        <div class="band-member-info">
+          <h2 class="card-title">Rosella</h2>
+          <p class="band-role">Bass</p>
+          <p class="band-bio">Rosella holds down the low end and keeps everything locked with the drums. Placeholder bio—replace with your own.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>The Queen Remains. All rights reserved.</p>
+  </footer>
+
+  <style>
+    .band-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .band-member {
+      display: flex;
+      flex-direction: column;
+    }
+    .band-member .placeholder-img {
+      min-height: 200px;
+    }
+    .band-member-photo {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      display: block;
+    }
+    .band-member-info {
+      padding: 1.25rem;
+    }
+    .band-role {
+      margin: 0.25rem 0 0.75rem;
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      color: var(--red-bright);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .band-bio {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+  </style>
+</body>
+</html>

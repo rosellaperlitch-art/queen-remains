@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gigs – The Queen Remains</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="The Queen Remains Home">
+        <img src="assets/logo.png" alt="The Queen Remains logo" />
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="band.html">The Band</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="gigs.html">Gigs</a>
+        <a href="videos.html">Videos</a>
+        <a href="merch.html">Merch</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">Gigs &amp; calendar</h1>
+    <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">When and where we’re playing. Update this page when you add new dates.</p>
+
+    <!--
+      ============================================
+      EDIT GIGS HERE (about once a month)
+      Copy a block below for each new gig. Format:
+      date, venue, city, optional ticket link.
+      ============================================
+    -->
+    <div class="gigs-list">
+      <article class="card gig-card">
+        <div class="gig-date">
+          <span class="gig-day">14</span>
+          <span class="gig-month">Apr</span>
+        </div>
+        <div class="gig-details">
+          <h2 class="gig-venue">TBA</h2>
+          <p class="gig-location">Venue and city TBA.</p>
+          <p><a href="#" class="btn">Tickets</a></p>
+        </div>
+      </article>
+
+      <!-- Example gig (copy this block to add real gigs, then delete this example):
+      <article class="card gig-card">
+        <div class="gig-date">
+          <span class="gig-day">15</span>
+          <span class="gig-month">Apr</span>
+        </div>
+        <div class="gig-details">
+          <h2 class="gig-venue">The Basement</h2>
+          <p class="gig-location">Downtown, Your City</p>
+          <p><a href="#" class="btn">Tickets</a></p>
+        </div>
+      </article>
+      -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>The Queen Remains. All rights reserved.</p>
+  </footer>
+
+  <style>
+    .gigs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .gig-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 1.25rem;
+      align-items: flex-start;
+    }
+    .gig-date {
+      flex-shrink: 0;
+      text-align: center;
+      min-width: 70px;
+      padding: 0.5rem;
+      background: var(--brown);
+      border: 1px solid var(--gold);
+      border-radius: 4px;
+    }
+    .gig-day {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+    .gig-month {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .gig-details {
+      flex: 1;
+      min-width: 200px;
+    }
+    .gig-venue {
+      margin: 0 0 0.25rem;
+      font-size: 1.25rem;
+      color: var(--gold);
+    }
+    .gig-location {
+      margin: 0 0 0.5rem;
+      color: var(--text-muted);
+    }
+    .gig-notes {
+      margin: 0.5rem 0 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+  </style>
+</body>
+</html>

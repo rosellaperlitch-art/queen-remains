@@ -1,0 +1,6 @@
+# Netlify config for The Queen Remains (static site)
+# Publish the root folder; no build step.
+
+[build]
+  publish = "."
+  command = "echo 'Static site – no build'"

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – The Queen Remains</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="The Queen Remains Home">
+        <img src="assets/logo.png" alt="The Queen Remains logo" />
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="band.html">The Band</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="gigs.html">Gigs</a>
+        <a href="videos.html">Videos</a>
+        <a href="merch.html">Merch</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">Contact us for events</h1>
+    <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Want to book us or say hi? Send your name and message below. Responses go to a spreadsheet.</p>
+
+    <!--
+      TO ADD YOUR GOOGLE FORM:
+      1. Go to forms.google.com and create a new form.
+      2. Add two questions: "Name" (short answer) and "Message" (paragraph).
+      3. In the form, click the three dots (⋮) → "Get pre-filled link" or just "Send" → then the "</>" icon to get the embed code.
+      4. Copy the iframe code Google gives you and replace the placeholder below.
+      Example: <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    -->
+    <div class="form-embed-wrap">
+      <div class="form-placeholder">
+        <p class="form-placeholder-title">Google Form embed</p>
+        <p>Create a Google Form with two fields: <strong>Name</strong> and <strong>Message</strong>. Turn on “Collect email addresses” in Settings if you want. Then in the form, click <strong>Send</strong> → the <strong>&lt;/&gt;</strong> icon to get the embed code.</p>
+        <p>Paste the iframe code into this file (contact.html) where it says “Replace the placeholder below”. The form responses will save to your Google Sheet automatically.</p>
+      </div>
+      <!-- Paste your Google Form iframe here, e.g.:
+      <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>The Queen Remains. All rights reserved.</p>
+  </footer>
+
+  <style>
+    .form-embed-wrap {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .form-placeholder {
+      background: var(--bg-card);
+      border: 2px dashed var(--gold);
+      padding: 2rem;
+      text-align: center;
+      color: var(--text-muted);
+    }
+    .form-placeholder-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--gold);
+      margin: 0 0 1rem;
+    }
+    .form-placeholder p {
+      margin: 0.75rem 0;
+    }
+    .form-embed-wrap iframe {
+      display: block;
+      width: 100%;
+      min-height: 800px;
+      border: 1px solid var(--outline);
+      border-radius: 4px;
+    }
+  </style>
+</body>
+</html>

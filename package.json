@@ -1,0 +1,14 @@
+{
+  "name": "the-queen-remains",
+  "version": "1.0.0",
+  "description": "The Queen Remains band website",
+  "private": true,
+  "scripts": {
+    "dev": "live-server --port=8080 --open=/",
+    "start": "serve --port=3000"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.4"
+  }
+}

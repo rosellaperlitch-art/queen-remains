@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Queen Remains – Official Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="The Queen Remains Home">
+        <img src="assets/logo.png" alt="The Queen Remains logo" />
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="band.html">The Band</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="gigs.html">Gigs</a>
+        <a href="videos.html">Videos</a>
+        <a href="merch.html">Merch</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-logo">
+        <img src="assets/logo.png" alt="The Queen Remains" />
+      </div>
+      <p class="hero-tagline">We're a band. We play music. Come see us.</p>
+      <p><a href="gigs.html" class="btn">See upcoming gigs</a></p>
+    </section>
+
+    <section class="home-blurb">
+      <h2 class="section-label">Who we are</h2>
+      <p>Six of us. Two vocalists, two guitars, bass, and drums. We're The Queen Remains—loud, a little messy, and ready to play.</p>
+      <p><a href="band.html">Meet the band →</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>The Queen Remains. All rights reserved.</p>
+  </footer>
+
+  <style>
+    .hero {
+      text-align: center;
+      padding: 3rem 0 2rem;
+    }
+    .hero-logo img {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 0 24px rgba(201, 162, 39, 0.4)) drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+    }
+    .hero-tagline {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin: 1rem 0 1.5rem;
+      font-style: italic;
+    }
+    .home-blurb {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--outline);
+    }
+    .home-blurb p {
+      max-width: 60ch;
+      margin: 0.5rem 0;
+    }
+  </style>
+</body>
+</html>

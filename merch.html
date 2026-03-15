@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merch – The Queen Remains</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="The Queen Remains Home">
+        <img src="assets/logo.png" alt="The Queen Remains logo" />
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="band.html">The Band</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="gigs.html">Gigs</a>
+        <a href="videos.html">Videos</a>
+        <a href="merch.html">Merch</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">Merch</h1>
+    <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">T-shirts, posters, and more. Powered by Printful.</p>
+
+    <!--
+      When your dad sets up Printful:
+      1. Create a store in Printful and add your products.
+      2. You can either:
+         a) Embed the store: get the store URL and use an iframe below, e.g.:
+            <iframe src="https://your-store.printful.com/..." ...></iframe>
+         b) Or add a "Visit our store" button that links to the store URL.
+      Replace the placeholder below with the embed or link when ready.
+    -->
+    <div class="merch-embed-wrap">
+      <div class="merch-placeholder">
+        <p class="merch-placeholder-title">Store coming soon</p>
+        <p>We’re setting up our merch with Printful. Once the store is ready, we’ll embed it here so you can shop without leaving the site.</p>
+        <p><strong>For the person setting up Printful:</strong> When the store is live, edit this file (merch.html). Replace the <code>.merch-placeholder</code> div with an iframe pointing to your Printful store URL, or add a button that links to the store.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>The Queen Remains. All rights reserved.</p>
+  </footer>
+
+  <style>
+    .merch-embed-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .merch-placeholder {
+      background: var(--bg-card);
+      border: 2px dashed var(--gold);
+      padding: 2rem;
+      text-align: center;
+      color: var(--text-muted);
+    }
+    .merch-placeholder-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--gold);
+      margin: 0 0 1rem;
+    }
+    .merch-placeholder p {
+      margin: 0.5rem 0;
+    }
+    .merch-placeholder code {
+      background: var(--brown);
+      padding: 0.2em 0.4em;
+      font-size: 0.9em;
+    }
+  </style>
+</body>
+</html>
