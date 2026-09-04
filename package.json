@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "live-server --port=8080 --open=/",
-    "start": "serve --port=3000"
+    "start": "serve --port=3000",
+    "poop": "echo 'poop'"
   },
   "devDependencies": {
     "live-server": "^1.2.2",
